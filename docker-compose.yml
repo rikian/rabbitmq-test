@@ -4,7 +4,8 @@ services:
 # for rabbitmq server
   rabbitMQ:
     container_name: rabbitmq-server
-    image: rabbitmq
+    image: rabbitmq:3.11.4-management-alpine
     ports:
       - 5672:5672
+      - 12345:15672
     
